@@ -24,7 +24,17 @@ struct binary_tree_s
 typedef struct binary_tree_s binary_tree_t;
 
 
+
+unsigned char check_is_leaf(const binary_tree_t *tree);
+int binary_tree_is_perfect(const binary_tree_t *tree);
+size_t binary_tree_depth(const binary_tree_t *tree);
+const binary_tree_t *node_leaf(const binary_tree_t *tree);
+int perfect_recursive(const binary_tree_t *tree, size_t depth, size_t l);
+
 int binary_tree_balance(const binary_tree_t *tree);
+
+int perfect_recursive(const binary_tree_t *tree, size_t depth, size_t l);
+int binary_tree_is_perfect(const binary_tree_t *tree);
 size_t binary_tree_height(const binary_tree_t *tree);
 size_t binary_tree_depth(const binary_tree_t *tree);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
